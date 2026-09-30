@@ -174,7 +174,7 @@ function mn_deps {
                         python-pep8 ${PYPKG}-pexpect ${PYPKG}-tk
     else  # Debian/Ubuntu
         $install gcc make socat psmisc xterm ssh iperf telnet \
-                 ethtool help2man pyflakes3 pylint python3-pep8 \
+                 ethtool help2man pyflakes3 pylint pycodestyle \
                  net-tools \
                  ${PYPKG}-pexpect ${PYPKG}-tk
         # Install pip

@@ -9,7 +9,7 @@
       name: [
         'aptitude', 'apt-transport-https', 'ca-certificates',
         'curl', 'python3-setuptools', 'python3-dev', 'build-essential',
-        'python3-pip','iptables','software-properties-common',
+        'python3-pip','iptables',
         'stress-ng', 'coreutils', 'iproute2', 'net-tools'
         ]
       state: present
@@ -47,7 +47,8 @@
      register: pip_path
 
    - name: build and install Containernet dependencies (using Mininet installer)
-     shell: PYTHON=python3 containernet/util/install.sh -fnv
+     shell: python3 -v
+     shell: PYTHON=python3 containernet/util/install.sh -nv
      args:
        chdir: ../../
 
